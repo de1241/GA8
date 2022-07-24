@@ -23,4 +23,3 @@ def user_input_features():
 
 
 st.subheader('User Input parameters')
-st.txt(Ans)
