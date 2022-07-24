@@ -11,9 +11,9 @@ def user_input_features():
     number1 = st.number_input("Enter_first_number")
     number2 = st.number_input("Enter_second_number")
     number3 = st.number_input("Enter_third_number")
-    data1={
-          number1,number2,number3
-          }
+    data1=max(number1,number2,number3)
+          
+          
     
 
     data = {         
@@ -27,4 +27,4 @@ df = user_input_features()
 
 st.subheader('User Input parameters')
 st.write(df.to_dict())
-st.write(df. max())
+st.write(data1)
