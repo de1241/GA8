@@ -27,7 +27,7 @@ df = user_input_features()
 
 st.subheader('User Input parameters')
 st.write(df.to_dict())
-st.write(data1.max())
+st.write(df. max() #max() )
 
 
 
