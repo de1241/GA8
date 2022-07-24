@@ -23,7 +23,7 @@ df = user_input_features()
 
 st.subheader('User Input parameters')
 st.write(df.to_dict())
-st.write(df. loc[df[0]. idxmax()])
+st.write(df. loc[df[1]. idxmax()])
 
 
 
