@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 st.write("""
 # Maximum of 3 numbers
-This app predicts the credit card approval probablity
 """)
 #Get Input
 
@@ -19,7 +18,7 @@ def user_input_features():
             'Enter_third_number': number3
             }
     Ans = max(number1,number2,number3)
-    return Ans
+    st.write(Ans)
 
 
 st.subheader('User Input parameters')
