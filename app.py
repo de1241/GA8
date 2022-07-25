@@ -22,12 +22,10 @@ def user_input_features():
             'Enter_third_number': number3
             }
     features = pd.DataFrame(data, index=[0])
-    maxval = features.max(axis=1)
-    return maxval
+    return features
 df = user_input_features()
-dans=df.max(axis=1)
 
 
 st.subheader('User Input parameters')
 st.write(df.to_dict())
-st.write("The maximum value is",dans)
+st.write("The maximum value is",df.max(axis=1))
