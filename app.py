@@ -8,9 +8,9 @@ st.write("""
 st.header('User Input Parameters')
 
 def user_input_features():
-    number1 = st.number_input("Enter_first_number", min_value=None, max_value=None, step=None, format=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
-    number2 = st.number_input("Enter_second_number",min_value=None, max_value=None, step=None, format=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
-    number3 = st.number_input("Enter_third_number",min_value=None, max_value=None, step=None, format=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
+    number1 = st.number_input("Enter_first_number", min_value=None, max_value=None)
+    number2 = st.number_input("Enter_second_number",min_value=None, max_value=None)
+    number3 = st.number_input("Enter_third_number",min_value=None, max_value=None)
     data1=max(number1,number2,number3)
           
           
