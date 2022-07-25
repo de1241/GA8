@@ -24,7 +24,8 @@ def user_input_features():
     features = pd.DataFrame(data, index=[0])
     return features
 df = user_input_features()
+dans=df.max(axis=1)
 
 st.subheader('User Input parameters')
 st.write(df.to_dict())
-st.write("The maximum value is",df.max(axis=1))
+st.write("The maximum value is",dans)
